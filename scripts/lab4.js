@@ -37,7 +37,7 @@ function discountPrices(prices, discount) {
     if(typeof discount !== 'number' || discount < 0 || discount > 1) {
         return false;
     }
-    for(price in prices) {
+    for(let price of prices) {
         if(typeof price !== 'number') {
             return false;
         }
